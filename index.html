@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Feelic</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <script src="js/main.js"></script>
+        <div class="window" id="searchWindow">
+            <center>
+            <label for="searchWord">検索ワード入力(英数は半角小文字)</label>
+            <form>
+                <select name="select1" id="select1">
+                <option value="1">フリー検索</option>
+                <option value="2">登録番号</option>
+                <option value="3">曲名</option>
+                <option value="4">きょくめい(ひらがな)</option>
+                <option value="5">ジャンル</option>
+                </select>
+            </form>
+            <input type="text" id="searchWord" />
+            <button onclick="search()">検索</button>
+            <button onclick="end()">終了</button>
+        </div>
+        <div class="window" id="resultWindow" style="display:none;">
+            <p id="resultOutput"></p>
+            <button onclick="closeResult()">閉じる</button>
+        </div>
+        <div class="window" id="errorWindow" style="display:none;">
+            <p>存在しません</p>
+            <button onclick="closeError()">戻る</button>
+        </center>
+        </div>
+    </body>
+</html>
