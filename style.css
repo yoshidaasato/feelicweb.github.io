@@ -1,0 +1,12 @@
+.window {
+    width: 80%; /* 画面幅の80% */
+    /* max-width: 600px; 最大幅を設定 */
+    padding: 20px;
+    border: 1px solid #000;
+    margin-bottom: 20px;
+    box-sizing: border-box; /* paddingを含めて幅を計算 */
+    max-height: 80vh; /* 画面高さの80% */
+    overflow-y: auto; /* 縦方向にスクロール可能 */
+    margin-left: auto;
+    margin-right: auto;
+}
